@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Cadastro com HTML, CSS e JavaScript</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <main class="container">
+        <div class="card">
+            <h1> Cadastrar </h1>
+
+            <div id="msgError"></div>
+            <div id="msgSuccess"></div>
+
+            <div class="label-float">
+                <input type="text" id="name" placeholder="" required>
+                <label id="labelName" for="name"> Nome </label>
+            </div>
+
+            <div class="label-float">
+                <input type="text" id="user" placeholder="" required>
+                <label id="labelUser" for="user"> Usuário </label>
+            </div>
+
+            <div class="label-float">
+                <input type="password" id="password" placeholder="" required>
+                <label id="labelPassword" for="password"> Senha </label>
+                <i id="seePassword" class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+
+            <div class="label-float">
+                <input type="password" id="confirmPassword" placeholder="" required>
+                <label id="labelConfirmPassword" for="confirmPassword"> Confirmar Senha </label>
+                <i id="seeConfirmPassword" class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+
+            <div class="justify-center">
+                <button onclick="cadastrar ()"> Cadastrar </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/signup.js"></script>
+</body>
+</html>
