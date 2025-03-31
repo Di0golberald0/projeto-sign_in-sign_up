@@ -4,7 +4,7 @@ if(localStorage.getItem("token") == null){
 };
   
 let userLogado = JSON.parse(localStorage.getItem("userLogin"));
-  console.log(userLogado);
+
 let logado = document.querySelector("#logado");
 logado.innerHTML = `Olá ${userLogado.name}`;
   
