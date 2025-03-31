@@ -3,13 +3,13 @@ if(localStorage.getItem("token") == null){
     window.location.href = "./assets/html/signin.html"; 
 };
   
-let userLogado = JSON.parse(localStorage.getItem("userLogado"));
+let userLogado = JSON.parse(localStorage.getItem("userLogin"));
   
 let logado = document.querySelector("#logado");
 logado.innerHTML = `Olá ${userLogado.name}`;
   
 function sair(){
     localStorage.removeItem("token");
-    localStorage.removeItem("userLogado");
+    localStorage.removeItem("userLogin");
     window.location.href = "./assets/html/signin.html"; 
 };
